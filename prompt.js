@@ -80,3 +80,41 @@ let eagle = {
         }
     }
 }
+
+//Prompt 11
+
+let house = {
+    //key value pair 1
+    porch: "empty",
+    //key value pair 2
+    door: "locked",
+    //boolean 1
+    bathroomOccupied: false,
+    //boolean 2
+    doorClosed: true,
+    //array
+    peopleInHouse: ["Mom","Dad", "sister", "brother"],
+    //object with 3 key value pairs
+    rooms: {
+        roomOne: "Living Room",
+        roomTwo: "Kitchen",
+        roomThree: "Master bedroom"
+    },
+
+    //method 1
+    oldest: function(){
+        return this.peopleInHouse[3] + " is the oldest child";
+    },
+    //method 2
+    youngest: function(){
+        return this.peopleInHouse[2] + " is the youngest child"
+    },
+    //method 3 with conditional
+    bathroom: function(){
+        if(this.bathroomOccupied === true){
+            console.log("The bathroom is occupied right now. ");
+        }else{
+            console.log("If you need to go to the bathroom, you can!");
+        }
+    }
+}
